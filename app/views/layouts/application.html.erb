@@ -13,8 +13,18 @@
   </head>
 
   <body>
-
-    <%= yield %>
+    <div class='row'>
+      <%= render 'layouts/nav_bar' %>
+    </div>
+    
+    <div class="row">
+      <%= yield %>
+    </div>
+    
+    <div class='row'>
+      <%= render 'layouts/footer' %>
+    </div>
+    
     <%= javascript_include_tag "application" %>
   </body>
 </html>
